@@ -23,10 +23,12 @@ pip install -r requirements.txt
   https://github.com/abetlen/llama-cpp-python
 
 ### Download Model
-  https://huggingface.co/uonlp/Vistral-7B-Chat-gguf
-Ensure you have the necessary API keys:
+  https://huggingface.co/uonlp/Vistral-7B-Chat-gguf 
+
 ### To use llama.cpp please see how to install on page
   https://github.com/abetlen/llama-cpp-python
+
+## Ensure you have the necessary API keys:
 ### Get a LangSmith API key
 
 Sign up for LangSmith at [smith.langchain.com](https://smith.langchain.com/) and generate an API Key.

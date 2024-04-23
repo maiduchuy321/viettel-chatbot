@@ -12,8 +12,9 @@ from langchain_core.runnables import RunnablePassthrough, RunnableLambda
 from langchain_core.messages import get_buffer_string
 from langchain.prompts import ChatPromptTemplate
 from langchain_core.prompts import format_document
-import weaviate
-from langchain_weaviate.vectorstores import WeaviateVectorStore
+from langchain_community.vectorstores import Chroma
+# import weaviate
+# from langchain_weaviate.vectorstores import WeaviateVectorStore
 import os
 from dotenv import load_dotenv
 load_dotenv()
@@ -35,7 +36,7 @@ os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_ENDPOINT"] = "https://api.smith.langchain.com"
 os.environ["LANGCHAIN_PROJECT"] = "viettel"
 os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
-print(os.environ["LANGCHAIN_API_KEY"])
+
 
 # Load the model of choice
 def load_llm():

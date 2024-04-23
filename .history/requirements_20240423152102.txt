@@ -1,0 +1,8 @@
+langchain
+langchain-community
+langsmith
+sentence-transformers
+chromadb
+llama-cpp-python
+stremlit
+tiktoken
